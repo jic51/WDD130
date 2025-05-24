@@ -1,4 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.home-title {
+  font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+}
 
 #content {
   max-width: 1600px;
@@ -73,4 +82,53 @@ footer p a:hover {
 
 footer p {
   font-size: 1.2em;
+}
+
+body {
+  font-size: 22px;
+}
+
+.home-title {
+  font-size: 2em;
+}
+
+.msg p {
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+nav a {
+  padding: 35px;
+}
+
+.book, .join {
+  padding: 15px 30px;
+}
+
+.book, .join {
+  margin-top: 50px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+}
+
+.book, .join {
+  border-radius: 5px;
+}
+
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+
+main section img {
+  box-sizing: border-box;
 }
