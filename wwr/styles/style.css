@@ -30,21 +30,23 @@ main section {
 body {
   background-color: #fcfbfb;
 }
+
 header {
   background-color: rgba(20, 30, 13, 0.7);
 }
+
 nav a:hover {
   background-color: black;
 }
-.book, .join {
-  background-color: var(--secondary-color);
-}
+
 .book:hover, .join:hover {
   background-color: var(--primary-color);
 }
+
 .msg {
   background-color: var(--accent2-color);
 }
+
 footer {
   background-color: var(--accent4-color);
 }
@@ -56,6 +58,7 @@ footer, footer a {
   color: #9e9c9c;
   text-decoration: none;
 }
+
 nav a:hover,
 .book:hover, .join:hover,
 footer a:hover {
@@ -86,6 +89,8 @@ footer p {
 
 body {
   font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 .home-title {
@@ -94,11 +99,6 @@ body {
 
 .msg p {
   line-height: 1.5em;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 h2 {
@@ -110,19 +110,14 @@ nav a {
 }
 
 .book, .join {
-  padding: 15px 30px;
-}
-
-.book, .join {
   margin-top: 50px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
 }
 
 .rivers-card, .camping-card, .rapids-card {
   margin: 200px 0;
-}
-
-.book, .join {
-  border-radius: 5px;
 }
 
 .card-img {
