@@ -81,7 +81,7 @@ p {
   background-color: #999;
 }
 .colors td{
-  width: 100/6%;
+  width: calc(100/6%);
   height: 3em;
 }
 .primary {
