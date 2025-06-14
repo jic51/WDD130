@@ -48,6 +48,7 @@ img {
 h1, h2, h3, h4, h5, h6 {        
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
+  
 }
 h2 {
   text-align: center;
@@ -111,10 +112,12 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
+  
 }
 nav  {
   list-style-type: none;
   display: flex;
+  
 }
 nav a {
   padding:1em;
