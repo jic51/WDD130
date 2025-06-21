@@ -153,12 +153,6 @@ footer p {
   color: white;
 }
 
-.msg {
-  background-color: var(--accent2-color);
-  padding: 35px;
-  box-shadow: 5px 5px 10px #6f7364;
-}
-
 .msg h2, .msg p {
   color: white;
 }
@@ -300,4 +294,11 @@ main h1, main h2 {
 .faq-item p {
   flex: 2;
   padding: 1em;
+}
+.msg {
+  grid-column: 6 / 11;
+  grid-row: 5 / 8; /* or a row after .mountains */
+  background-color: var(--accent2-color);
+  padding: 35px;
+  box-shadow: 5px 5px 10px #6f7364;
 }
