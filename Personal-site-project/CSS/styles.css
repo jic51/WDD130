@@ -38,6 +38,7 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem;
+  
 }
 
 /* Header */
@@ -45,7 +46,7 @@ header {
   background: #002244;
   color: #fff;
   padding: 1rem 0;
-  
+  border-radius: 10px;
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -304,6 +305,7 @@ footer {
   padding: 2rem 0;
   margin-top: 2rem;
   border-top: 3px solid #001122;
+  border-radius: 10px;
 }
 
 /* Responsive */

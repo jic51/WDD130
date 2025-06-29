@@ -18,10 +18,11 @@
         <a id="logo_link" href="index.html">
           <img src="Siteplan/CristinaVeraAttorney1.png" alt="Cristina Vera Logo">
         </a>
-        <h1 data-i18n="head_h1">Cristina Vera - Abogada</h1>
+        <h1 data-i18n="head_h1">Abogada Cristina Vera</h1>
       </div>
       <nav>
         <ul>
+          <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
           <li><a href="About_me.html" data-i18n="nav_about">Sobre mí</a></li>
           <li><a href="services.html" data-i18n="nav_services">Servicios</a></li>
           <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
@@ -34,9 +35,6 @@
       </nav>
     </div>
   </header>
-  <section>
-    <img src="Siteplan/contact_form.jpg" alt="Cristina Vera servicios" class="about-img">
-  </section>
 
   <!--<section class="hero">
     <div class="container">
@@ -49,6 +47,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2 data-i18n="contact_title">Contáctanos</h2>
+      <img src="Siteplan/contact_form.jpg" alt="Cristina Vera servicios" class="about-img">
       <form action="submit_form.php" method="POST" enctype="multipart/form-data">
         <label for="name" data-i18n="label_name">Nombre completo:</label>
         <input type="text" name="name" required />
@@ -71,7 +70,7 @@
         </select>
 
         <div id="other-reason-container" style="display: none; margin-top: 10px;">
-          <label for="other-reason">Por favor, especifique:</label>
+          <label for="other-reason" data-i18n="opt_otro1">Por favor, especifique:</label>
           <textarea id="other-reason" name="other-reason" rows="3" cols="40"></textarea>
         </div>
 
@@ -79,11 +78,12 @@
 
         <button type="submit" data-i18n="btn_submit">Enviar Consulta</button>
       </form>
-
+    <div>
+      <p></p>
       <p>Email: cristinaveraguevara@outlook.com</p>
-      <p>Teléfono: +593992347656</p>
-      <p>Ubicación: Ecuador</p>
-
+      <p data-i18n="phone">Teléfono: +593992347656</p>
+      <p data-i18n="contact_location">Ubicación: Ecuador</p>
+    </div>
       <a href="https://calendly.com/cristinavera/consulta" class="btn" target="_blank" data-i18n="calendly_btn">Agendar Consulta vía Calendly</a>
     </div>
   </section>
@@ -101,41 +101,42 @@
       es: {}, // el español es el valor por defecto, así que no traducimos aquí
       en: {
         head_h1: "Cristina Vera - Attorney",
+        nav_home: "Home",
         nav_about: "About Me",
         nav_services: "Services",
         nav_blog: "Blog",
         nav_contact: "Contact",
         nav_dashboard: "Dashboard",
         nav_faq: "FAQ",
-        hero_title: "Your Trusted Legal Partner",
-        hero_subtitle: "Experience, Honesty, Commitment and Solution to your legal problems",
-        hero_cta: "Request a Consultation",
-        about_title: "About Cristina Vera",
-        about_text1: "Cristina Vera is not only a seasoned attorney but also a person deeply committed to service, integrity, and empathy. Originally from Milagro, Ecuador, Cristina grew up with a strong sense of community and a passion for justice. Her personal values—honesty, compassion, and resilience—guide her daily interactions with clients, colleagues, and the broader community. She is known for her ability to listen attentively, communicate clearly, and create a sense of trust with those who seek her counsel. Outside of her legal practice, Cristina is actively involved in local initiatives that support women and families, reflecting her dedication to uplifting and protecting vulnerable members of society.",
-        about_text2: "With over a decade of legal experience, Cristina Vera has built a reputable law practice that focuses on delivering strategic and personalized legal solutions. She specializes in civil law, family law, estate planning, notarial services, and traffic law, all within the framework of Ecuadorian legislation. Her services include handling complex divorces, custody and child support cases, drafting and reviewing contracts, assisting with inheritance and property transfers, and offering representation in traffic and domestic violence disputes. Cristina is highly knowledgeable in both litigation and transactional processes, ensuring her clients receive comprehensive support from consultation to resolution. Her legal practice is guided by ethical rigor, deep analysis, and a genuine interest in each client’s well-being.",
-        about_text3: "What sets Cristina Vera apart is her rare combination of legal expertise and human understanding. She does not see clients as case numbers but as individuals facing real-life challenges. Cristina takes the time to explain each step of the legal process in clear, accessible terms, ensuring clients are empowered to make informed decisions. Her bilingual website and document upload options make it easy for people across Ecuador to reach her, regardless of location. In a legal landscape that can feel overwhelming, Cristina offers reassurance, clarity, and a strong defense of your rights. Her honesty, personalized service, and proven results have earned her the trust and loyalty of hundreds of clients—and she is ready to help you, too.",
-        video_error: "Your browser does not support video playback.",
-        services_title: "Services",
-        service_1: "Family",
-        service_2: "Women",
-        service_3: "Childhood and Adolescence",
-        service_4: "Notarial acts (Deeds, Contracts, Powers of Attorney, etc.)",
-        service_5: "Domestic Violence",
-        service_6: "Transit",
-        faq_title: "Frequently Asked Questions",
-        faq_q1: "How much does an initial consultation cost?",
-        faq_a1: "The initial consultation may vary depending on the type of case, but we often offer a free first evaluation.",
-        faq_q2: "What documents should I bring to my appointment?",
-        faq_a2: "Basic documentation such as ID card, contracts, deeds, etc., depending on the case.",
-        faq_q3: "Do I need to make an appointment online?",
-        faq_a3: "Yes, the online appointment is necessary to reserve the time for your consultation. If you do not schedule an appointment in advance, you will have to wait until there is time available.",
-        blog_title: "Legal Tips and News",
-        blog1_title: "How to correctly register your business in Ecuador?",
-        blog1_date: "Published on April 20, 2025",
-        blog1_desc: "Learn the legal steps to safely establish your business.",
-        blog2_title: "What should you know about mutual agreement divorce?",
-        blog2_date: "Published on May 5, 2025",
-        blog2_desc: "A quick guide to making informed decisions if you're considering this option.",
+        //hero_title: "Your Trusted Legal Partner",
+        //hero_subtitle: "Experience, Honesty, Commitment and Solution to your legal problems",
+        //hero_cta: "Request a Consultation",
+        //about_title: "About Cristina Vera",
+        //about_text1: "Cristina Vera is not only a seasoned attorney but also a person deeply committed to service, integrity, and empathy. Originally from Milagro, Ecuador, Cristina grew up with a strong sense of community and a passion for justice. Her personal values—honesty, compassion, and resilience—guide her daily interactions with clients, colleagues, and the broader community. She is known for her ability to listen attentively, communicate clearly, and create a sense of trust with those who seek her counsel. Outside of her legal practice, Cristina is actively involved in local initiatives that support women and families, reflecting her dedication to uplifting and protecting vulnerable members of society.",
+        //about_text2: "With over a decade of legal experience, Cristina Vera has built a reputable law practice that focuses on delivering strategic and personalized legal solutions. She specializes in civil law, family law, estate planning, notarial services, and traffic law, all within the framework of Ecuadorian legislation. Her services include handling complex divorces, custody and child support cases, drafting and reviewing contracts, assisting with inheritance and property transfers, and offering representation in traffic and domestic violence disputes. Cristina is highly knowledgeable in both litigation and transactional processes, ensuring her clients receive comprehensive support from consultation to resolution. Her legal practice is guided by ethical rigor, deep analysis, and a genuine interest in each client’s well-being.",
+        //about_text3: "What sets Cristina Vera apart is her rare combination of legal expertise and human understanding. She does not see clients as case numbers but as individuals facing real-life challenges. Cristina takes the time to explain each step of the legal process in clear, accessible terms, ensuring clients are empowered to make informed decisions. Her bilingual website and document upload options make it easy for people across Ecuador to reach her, regardless of location. In a legal landscape that can feel overwhelming, Cristina offers reassurance, clarity, and a strong defense of your rights. Her honesty, personalized service, and proven results have earned her the trust and loyalty of hundreds of clients—and she is ready to help you, too.",
+        //video_error: "Your browser does not support video playback.",
+        //services_title: "Services",
+        //service_1: "Family",
+        //service_2: "Women",
+        //service_3: "Childhood and Adolescence",
+        //service_4: "Notarial acts (Deeds, Contracts, Powers of Attorney, etc.)",
+        //service_5: "Domestic Violence",
+        //service_6: "Transit",
+        //faq_title: "Frequently Asked Questions",
+        //faq_q1: "How much does an initial consultation cost?",
+        //faq_a1: "The initial consultation may vary depending on the type of case, but we often offer a free first evaluation.",
+        //faq_q2: "What documents should I bring to my appointment?",
+        //faq_a2: "Basic documentation such as ID card, contracts, deeds, etc., depending on the case.",
+        //faq_q3: "Do I need to make an appointment online?",
+        //faq_a3: "Yes, the online appointment is necessary to reserve the time for your consultation. If you do not schedule an appointment in advance, you will have to wait until there is time available.",
+        //blog_title: "Legal Tips and News",
+        //blog1_title: "How to correctly register your business in Ecuador?",
+        //blog1_date: "Published on April 20, 2025",
+        //blog1_desc: "Learn the legal steps to safely establish your business.",
+        //blog2_title: "What should you know about mutual agreement divorce?",
+        //blog2_date: "Published on May 5, 2025",
+        //blog2_desc: "A quick guide to making informed decisions if you're considering this option.",
         contact_title: "Contact Us",
         label_name: "Full Name:",
         label_cedula: "ID number",
@@ -148,8 +149,10 @@
         opt_intrafamiliar: "Family affairs",
         opt_transito: "Transit",
         opt_otros: "other",
+        opt_otro1: "Please specify:",
         btn_submit: "Submit Inquiry",
-        contact_location: "Location: Milagro, Ecuador",
+        phone: "Phone: +593992347656", 
+        contact_location: "Location: Ecuador",
         calendly_btn: "Schedule via Calendly",
         footer_rights: "All rights reserved."
       }
