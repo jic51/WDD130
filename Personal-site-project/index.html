@@ -14,15 +14,18 @@
 
   <header>
     <div class="container">
-      <h1 data-i18n="head_h1">Cristina Vera - Abogada</h1>
+      <div class="branding">
+        <a id="logo_link" href="index.html">
+          <img src="Siteplan/CristinaVeraAttorney1.png" alt="Cristina Vera Logo">
+        </a>
+        <h1 data-i18n="head_h1">Cristina Vera - Abogada</h1>
+      </div>
       <nav>
         <ul>
-          <li><a href="#about" data-i18n="nav_about">Sobre mí</a></li>
-          <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
-          <li><a href="#blog" data-i18n="nav_blog">Blog</a></li>
-          <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
-          <li><a href="dashboard.html" data-i18n="nav_dashboard">Dashboard</a></li>
-          <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+          <li><a href="Home.html" data-i18n="nav_about">Sobre mí</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
         </ul>
         <select id="language-select">
           <option value="es">Español</option>
@@ -43,9 +46,12 @@
   <section id="about" class="about">
     <div class="container">
       <h2 data-i18n="about_title">Sobre Cristina Vera</h2>
-      <p data-i18n="about_text1">Con más de 10 años de experiencia legal, Cristina Vera se ha consolidado como una asesora y defensora de confianza para cientos de personas y pequeñas empresas en Milagro y en todo Ecuador. Su experiencia abarca una amplia gama de áreas legales, incluyendo derecho civil, derecho corporativo, derecho de familia, planificación patrimonial y actos notariales como contratos, poderes notariales y transacciones inmobiliarias.</p>
-      <p data-i18n="about_text2">Cristina está profundamente comprometida con brindar soluciones legales personalizadas, adaptadas a las necesidades únicas de cada cliente. Es reconocida por su enfoque minucioso, comunicación clara y dedicación inquebrantable para lograr los mejores resultados posibles. Ya sea asistiendo a clientes en litigios complejos o guiándolos en asuntos transaccionales, Cristina combina su amplio conocimiento con una comprensión compasiva del impacto personal que pueden tener los problemas legales.</p>
-      <p data-i18n="about_text3">Su pasión por la justicia y la defensa del cliente impulsa su continuo desarrollo profesional y su compromiso de mantenerse al día con los cambios en la legislación ecuatoriana. El objetivo de Cristina Vera es empoderar a sus clientes mediante asesoría legal transparente, asegurándose de que se sientan apoyados y seguros en cada paso del proceso.</p>
+        <p data-i18n="about_text1">Con más de 10 años de experiencia legal, Cristina Vera se ha consolidado como una asesora y defensora de confianza para cientos de personas y pequeñas empresas en Milagro y en todo Ecuador. Su experiencia abarca una amplia gama de áreas legales, incluyendo derecho civil, derecho corporativo, derecho de familia, planificación patrimonial y actos notariales como contratos, poderes notariales y transacciones inmobiliarias. </p>
+        <p>Conoce mas sobre Cristina Vera <button>Leer mas</button></p>
+        <p data-i18n="about_text2">Cristina está profundamente comprometida con brindar soluciones legales personalizadas, adaptadas a las necesidades únicas de cada cliente. Es reconocida por su enfoque minucioso, comunicación clara y dedicación inquebrantable para lograr los mejores resultados posibles. Ya sea asistiendo a clientes en litigios complejos o guiándolos en asuntos transaccionales, Cristina combina su amplio conocimiento con una comprensión compasiva del impacto personal que pueden tener los problemas legales.</p>
+        <p>Conoce mas sobre estos servicios legales <button>Leer mas</button></p>
+        <p data-i18n="about_text3">Su pasión por la justicia y la defensa del cliente impulsa su continuo desarrollo profesional y su compromiso de mantenerse al día con los cambios en la legislación ecuatoriana. El objetivo de Cristina Vera es empoderar a sus clientes mediante asesoría legal transparente, asegurándose de que se sientan apoyados y seguros en cada paso del proceso.</p>
+        <P>Agenda una consulta legal hoy <button>Agendar</button></P>
       <!--<video width="85%" controls>
         <source src="video-presentacion.mp4" type="video/mp4">
         <span data-i18n="video_error">Tu navegador no admite la reproducción de video.</span>
@@ -56,13 +62,28 @@
   <section id="services" class="services">
     <div class="container">
       <h2 data-i18n="services_title">Servicios</h2>
+      <p>
+        Entre los servicios legales que ofrece Cristina Vera se incluyen:
+      </p>
       <ul>
-        <li data-i18n="service_1">Familia</li>
+        <li data-i18n="service_1" class="servise_fam">Familia</li>
+          <p>El derecho de familia en Ecuador abarca temas como divorcio, custodia, pensión alimenticia, régimen de visitas y protección de menores.</p><button>Leer mas</button>
+          
         <li data-i18n="service_2">Mujer</li>
+          <p>Asesoría y representación en casos de violencia de género, derechos laborales, y protección legal para mujeres. Esta área se enfoca en proteger a mujeres víctimas de violencia intrafamiliar, abandono, abuso o discriminación, especialmente en el entorno familiar.</p><button>Leer mas</button>
+          
         <li data-i18n="service_3">Ninez y Adolecencia</li>
+          <p>Se refiere a casos legales que involucran a menores: custodia, patria potestad, pensión alimenticia, visitas, tutela y protección en situaciones vulnerables.</p><button>Leer mas</button>
+          
         <li data-i18n="service_4">Actos notariales (Escrituras, Contratos, Poderes, etc)</li>
+          <p>Son documentos legales que deben ser validados ante notario: contratos, escrituras, poderes, autorizaciones, declaraciones juramentadas, entre otros.</p><button>Leer mas</button>
+          
         <li data-i18n="service_5">Violencia intrafamilar</li>
+          <p>La violencia intrafamiliar incluye abuso físico, psicológico, sexual o económico que ocurre en relaciones familiares o íntimas. En Ecuador, está regulada por la Ley Orgánica Integral para Prevenir y Erradicar la Violencia contra las Mujeres y el Código Orgánico Integral Penal (COIP). Las víctimas pueden solicitar medidas de protección, custodia de hijos, boletas de auxilio e incluso procesos penales contra el agresor.</p><button>Leer mas</button>
+          
         <li data-i18n="service_6">Transito</li>
+          <p>Incluye infracciones, accidentes, multas, suspensión de licencias y trámites administrativos ante la Agencia Nacional de Tránsito (ANT).</p><button>Leer mas</button>
+          
       </ul>
     </div>
   </section>
@@ -87,7 +108,7 @@
     </div>
   </section>
 
-  <section id="blog" class="blog">
+  <!--<section id="blog" class="blog">
     <div class="container">
       <h2 data-i18n="blog_title">Consejos y Noticias Legales</h2>
       <article>
@@ -101,9 +122,11 @@
         <p data-i18n="blog2_desc">Una guía rápida para tomar decisiones informadas si estás considerando esta opción.</p>
       </article>
     </div>
-  </section>
+  </section>-->
 
-  <section id="contact" class="contact">
+
+
+  <!---</1><section id="contact" class="contact">
     <div class="container">
       <h2 data-i18n="contact_title">Contáctanos</h2>
       <form action="submit_form.php" method="POST" enctype="multipart/form-data">
@@ -143,7 +166,7 @@
 
       <a href="https://calendly.com/cristinavera/consulta" class="btn" target="_blank" data-i18n="calendly_btn">Agendar Consulta vía Calendly</a>
     </div>
-  </section>
+  </section>--->
 
   <footer>
     <div class="container">
@@ -168,16 +191,17 @@
         hero_subtitle: "Experience, Honesty, Commitment and Solution to your legal problems",
         hero_cta: "Request a Consultation",
         about_title: "About Cristina Vera",
-        about_text1: "With over 10 years of dedicated legal experience, Cristina Vera has established herself as a trusted advisor and advocate for hundreds of individuals and small businesses throughout Milagro and across Ecuador. Her expertise spans a wide range of legal fields, including civil law, corporate law, family law, estate planning, and notarial acts such as contracts, powers of attorney, and property transactions.",
-        about_text2: "Cristina is deeply committed to providing personalized legal solutions tailored to the unique needs of each client. She is known for her thorough approach, clear communication, and unwavering dedication to achieving the best possible outcomes. Whether assisting clients with complex litigation or guiding them through transactional matters, Cristina combines her extensive knowledge with a compassionate understanding of the personal impact legal issues can have.",
-        about_text3: "Her passion for justice and client advocacy drives her ongoing professional development and commitment to staying current with changes in Ecuadorian law. Cristina Vera’s goal is to empower her clients through transparent legal advice, ensuring they feel supported and confident every step of the way.",
+        about_text1: "Cristina Vera is not only a seasoned attorney but also a person deeply committed to service, integrity, and empathy. Originally from Milagro, Ecuador, Cristina grew up with a strong sense of community and a passion for justice. Her personal values—honesty, compassion, and resilience—guide her daily interactions with clients, colleagues, and the broader community. She is known for her ability to listen attentively, communicate clearly, and create a sense of trust with those who seek her counsel. Outside of her legal practice, Cristina is actively involved in local initiatives that support women and families, reflecting her dedication to uplifting and protecting vulnerable members of society.",
+        about_text2: "With over a decade of legal experience, Cristina Vera has built a reputable law practice that focuses on delivering strategic and personalized legal solutions. She specializes in civil law, family law, estate planning, notarial services, and traffic law, all within the framework of Ecuadorian legislation. Her services include handling complex divorces, custody and child support cases, drafting and reviewing contracts, assisting with inheritance and property transfers, and offering representation in traffic and domestic violence disputes. Cristina is highly knowledgeable in both litigation and transactional processes, ensuring her clients receive comprehensive support from consultation to resolution. Her legal practice is guided by ethical rigor, deep analysis, and a genuine interest in each client’s well-being.",
+        about_text3: "What sets Cristina Vera apart is her rare combination of legal expertise and human understanding. She does not see clients as case numbers but as individuals facing real-life challenges. Cristina takes the time to explain each step of the legal process in clear, accessible terms, ensuring clients are empowered to make informed decisions. Her bilingual website and document upload options make it easy for people across Ecuador to reach her, regardless of location. In a legal landscape that can feel overwhelming, Cristina offers reassurance, clarity, and a strong defense of your rights. Her honesty, personalized service, and proven results have earned her the trust and loyalty of hundreds of clients—and she is ready to help you, too.",
         video_error: "Your browser does not support video playback.",
         services_title: "Services",
         service_1: "Family",
         service_2: "Women",
         service_3: "Childhood and Adolescence",
         service_4: "Notarial acts (Deeds, Contracts, Powers of Attorney, etc.)",
-        service_5: "Transit",
+        service_5: "Domestic Violence",
+        service_6: "Transit",
         faq_title: "Frequently Asked Questions",
         faq_q1: "How much does an initial consultation cost?",
         faq_a1: "The initial consultation may vary depending on the type of case, but we often offer a free first evaluation.",

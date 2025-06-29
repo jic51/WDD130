@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cristina Vera - Servicios Legales</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="icon" type="image/png" href="iMAGE/favicon.png">
+  <script src="JS/main.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="branding">
+        <a id="logo_link" href="index.html">
+          <img src="Siteplan/CristinaVeraAttorney1.png" alt="Cristina Vera Logo">
+        </a>
+        <h1 data-i18n="head_h1">Cristina Vera - Abogada</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="About_me.html" data-i18n="nav_about">Sobre mí</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Servicios</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+          <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+        </ul>
+        <select id="language-select">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <!--<section class="hero">
+    <div class="container">
+      <h2 data-i18n="hero_title" id="rotating-text">Tu Asesor Legal de Confianza</h2>
+      <p data-i18n="hero_subtitle">Experiencia, Honestidad, Compromiso y Solucion a sus problemas juridicos.</p>
+      <a href="#contact" class="btn" data-i18n="hero_cta">Solicita una Consulta</a>
+    </div>
+  </section>-->
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 data-i18n="contact_title">Contáctanos</h2>
+      <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+        <label for="name" data-i18n="label_name">Nombre completo:</label>
+        <input type="text" name="name" required />
+
+        <label for="cedula" data-i18n="label_cedula">Numero de cedula:</label>
+        <input type="text" name="cedula" required />
+
+        <label for="email" data-i18n="label_email">Correo electrónico:</label>
+        <input type="email" name="email" required />
+
+        <label for="motivo" data-i18n="label_motivo">Motivo de consulta:</label>
+        <select id="reason" name="motivo" onchange="showOtherField()">
+          <option value="Familia" data-i18n="opt_familia">Asunto de Familia</option>
+          <option value="Mujer" data-i18n="opt_mujer">Asuntos de Mujer</option>
+          <option value="Niñez y adolecensia" data-i18n="opt_niñez">Asuntos de niñez y a dolecensia</option>
+          <option value="Actos notariales (Escrituras, Contratos, Poderes, etc)" data-i18n="opt_notariales">Escrituras, Contratos, Poderes, etc</option>
+          <option value="Violencia intrafamilar" data-i18n="opt_intrafamiliar">Violencia en la familia</option>
+          <option value="Transito" data-i18n="opt_transito">Transito</option>
+          <option value="otro" data-i18n="opt_otro">Otro</option>
+        </select>
+
+        <div id="other-reason-container" style="display: none; margin-top: 10px;">
+          <label for="other-reason">Por favor, especifique:</label>
+          <textarea id="other-reason" name="other-reason" rows="3" cols="40"></textarea>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+        <button type="submit" data-i18n="btn_submit">Enviar Consulta</button>
+      </form>
+
+      <p>Email: cristinaveraguevara@outlook.com</p>
+      <p>Teléfono: +593992347656</p>
+      <p>Ubicación: Ecuador</p>
+
+      <a href="https://calendly.com/cristinavera/consulta" class="btn" target="_blank" data-i18n="calendly_btn">Agendar Consulta vía Calendly</a>
+    </div>
+  </section>
+  
+</body>
+</html>
