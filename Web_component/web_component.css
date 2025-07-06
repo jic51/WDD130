@@ -24,7 +24,7 @@ body {
 .search_icon {
   position: absolute;
   left: 20px;
-  top: 50%;
+  top: 500%;
   transform: translateY(-50%);
 }
 
