@@ -7,7 +7,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #2c2b2b;
+  background-color: #131212;
 }
 
 .main-container {
@@ -41,19 +41,40 @@ body {
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.back {
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.back::after, .back::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 99.5%;
   height: 60px;
   top: 50%;
   left: 50%;
   border-radius: 30px;
-  background-image: conic-gradient(#4285F4, #DB4437, #F4B400, #0F9D58, #4285F4);  
-  translate: -50.5% 48%;
+  background-image: conic-gradient(from var(--angle),  #4285F4, #DB4437, #F4B400, #0F9D58, #4285F4);  
+  translate: -50.5% 49%;
   z-index: -1;
-  padding: 4.5px;
+  padding: 4px;
   border-radius: 35px;
+  animation: 3s spin linear infinite;
+}
+
+.back::before {
+  filter: blur(1.9rem);
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 .search-bar input{
