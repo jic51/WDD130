@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristina Vera - Servicios Legales</title>
-  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="CSS/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="icon" type="image/png" href="iMAGE/favicon.png">
@@ -50,16 +50,16 @@
       <img src="Siteplan/contact_form.jpg" alt="Cristina Vera servicios" class="about-img">
       <form action="submit_form.php" method="POST" enctype="multipart/form-data">
         <label for="name" data-i18n="label_name">Nombre completo:</label>
-        <input type="text" name="name" required />
+        <input type="text" id="name" name="name" required>
 
         <label for="cedula" data-i18n="label_cedula">Numero de cedula:</label>
-        <input type="text" name="cedula" required />
+        <input type="text" id="cedula" name="cedula" required>
 
         <label for="email" data-i18n="label_email">Correo electrónico:</label>
-        <input type="email" name="email" required />
+        <input type="email" id="email" name="email" required>
 
         <label for="motivo" data-i18n="label_motivo">Motivo de consulta:</label>
-        <select id="reason" name="motivo" onchange="showOtherField()">
+        <select id="motivo" name="motivo" onchange="showOtherField()">
           <option value="Familia" data-i18n="opt_familia">Asunto de Familia</option>
           <option value="Mujer" data-i18n="opt_mujer">Asuntos de Mujer</option>
           <option value="Niñez y adolecensia" data-i18n="opt_niñez">Asuntos de niñez y a dolecensia</option>
